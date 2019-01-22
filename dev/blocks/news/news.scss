@@ -1,0 +1,49 @@
+.news{
+    padding-top: 63px;
+    padding-bottom: 20px;
+    .section__title{
+        margin-bottom: 94px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    &__body{
+        display: flex;
+    }
+    .pnews{
+        width: 25%;
+        margin-right: 23px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        .pnew{
+            &__img{
+                width: 100%;
+            }
+        }
+
+        &__title{
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__descr{
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &__more{
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 23px;
+            display: block;
+        }
+        
+    }
+}

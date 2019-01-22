@@ -1,0 +1,101 @@
+.schedule{
+    background-color: #000221;
+    margin-top: -15px;
+    padding-top: 17px;
+    &__wrapper{
+        
+    }
+    .section__title{
+        margin-bottom: 65px;
+    }
+
+    &__slider{
+        color: white;
+    }
+    
+    .owl-item{
+        &:first-child{
+            .schedule__content{
+                &:before{
+                    bottom: -8px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &__content{
+        border-bottom: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 40px;
+        position: relative;
+        margin-bottom: 10px;
+
+       
+        &:before{
+            content: "";
+            height: 10px;
+            z-index: 999;
+            width: 10px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            bottom: -5px;
+            left: 20px;
+        }
+
+        &:after{
+            content: "";
+            height: 1px;
+            z-index: 999;
+            width: 56px;
+            background: $main;
+            position: absolute;
+            top: 30px;
+            right: 70px;
+        }
+        &_active{
+            &:before{
+                height: 20px;
+                width: 20px;
+                background: url("../img/icons/timetable.svg") no-repeat;
+                background-size: contain;
+                border-radius: 0%;
+            }
+        }
+        
+    }
+    .content{
+        &__date{
+            font-size: 22.4px;
+            margin-bottom: 1px;
+            font-weight: 300;
+
+        }
+
+        &__artist{
+            font: 15px;
+            font-weight: bold;
+        }
+
+        &__button{
+            margin-top: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            background: #e49c6e;
+            border-radius: 50px;
+            height: 23px;
+            width: 97px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+
+    }
+}

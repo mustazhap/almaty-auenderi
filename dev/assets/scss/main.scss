@@ -1,0 +1,53 @@
+// main
+@import 'settings';
+@import 'libs';
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: $OS;
+  box-sizing: border-box;
+  position: relative;
+  color: $text;
+  *{
+    box-sizing: border-box;
+  }
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+// import files of blocks [Basic]d
+@import "../../blocks/section/section";
+
+// Index
+@import "../../blocks/header/header";
+
+@import "../../blocks/position/position";
+@import "../../blocks/soon/soon";
+@import "../../blocks/staff/staff";
+@import "../../blocks/mailing/mailing";
+@import "../../blocks/news/news";
+
+
+
+
+@import "../../blocks/schedule/schedule";
+
+
+
+
+// Footer :)
+@import "../../blocks/footer/footer";
+
+
+
+// importing media queries
+@import "media";
