@@ -11,10 +11,29 @@
         min-width: 340px;
         width: 100%;
         background: #fff;
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+        .cal{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: $text;
+            a{
+                color: $text;
+            }
+            caption{
+                color: $text;
+            }
+            .event{
+                margin-bottom: 0;
+            }
+        }
     }
     .event{
         background: #fff;
         display: flex;
+        width: 100%;
         margin-bottom: 28px;
 
         &:last-child{
@@ -22,12 +41,15 @@
         }
 
         &__img{
-            width: 502px;
+            width: 40%;
+            img{
+                width: 100%;
+            }
         }
 
         &__body{
+            width: 60%;
             padding-left: 27px;
-            padding-top: 40px;
             color: $text;
             display: flex;
             flex-direction: column;
@@ -64,6 +86,7 @@
             display: flex;
             justify-content: flex-end;
             padding-bottom: 48px;
+            padding-right: 20px;
         }
 
         &__button{
