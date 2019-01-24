@@ -6,11 +6,21 @@
         
     }
     .section__title{
-        margin-bottom: 65px;
     }
 
+    &__mask{
+        width: 76%;
+        overflow: hidden;
+    }
     &__slider{
         color: white;
+        width: 110%;
+        margin-top: 40px;
+    }
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
     }
     
     .owl-item{
@@ -20,6 +30,38 @@
                     bottom: -8px;
                     left: 0;
                 }
+            }
+        }
+    }
+    .owl-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 91%;
+        margin-top: 20px;
+        button{
+            font-family: icomoon!important;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 26px;
+            outline: none;
+            span{
+                display: none;
+            }
+        }
+        .owl-prev{
+            &::before{
+                content: "\e90c";
+            }
+        }
+        .owl-next{
+            &::before{
+                content: "\e90b";
             }
         }
     }
@@ -53,7 +95,7 @@
             background: $main;
             position: absolute;
             top: 30px;
-            right: 70px;
+            right: 38px;
         }
         &_active{
             &:before{
@@ -98,4 +140,69 @@
         
 
     }
+}
+
+.cal{
+    display: block;
+    width: max-content;
+    td{
+        a{
+            color: white;
+            width: 33px;
+            height: 33px;
+            color: #ffffff;
+            font-family: "Open Sans";
+            font-size: 18px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        
+    }
+    .off{
+        visibility: hidden;
+        }
+    .active{
+        border: 2px solid #e49c6e;
+        background: #e49c6e;
+        border-radius: 50%;
+    }
+
+    .event{
+        border: 2px solid #e49c6e;
+        border-radius: 50%;
+    }
+
+    .today{
+        a{
+        font-weight: bold;
+        }
+    }
+
+    caption{
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .span{
+            font-size: 19px;
+        }
+        .icon-prev{
+        }
+        .icon-next{
+        }
+    }
+    &-month{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
 }
