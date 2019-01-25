@@ -1,0 +1,31 @@
+.rules{
+    &__wrapper{
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 109px;
+        text-align: center;
+    }
+
+    .section__title{
+        margin-bottom: 48px;
+    }
+    &__text{
+        font-size: 16px;
+        font-style: italic;
+        padding-left: 20px;
+        margin-bottom: 39px;
+
+        b{
+            font-weight: normal;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+    }
+}

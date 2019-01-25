@@ -1,0 +1,39 @@
+.contacts{
+    padding-top: 49px;
+    padding-bottom: 73px;
+
+    &__wrapper{
+        width: 100%;
+        display: flex;
+    }
+    &__map{
+        width: 854px;
+        margin-right: 87px;
+        height: 716px;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__row{
+        display: flex;
+        margin-bottom: 26px;
+        i{
+            font-size: 25px;
+            color: $text;
+        }
+        span{
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 25px;
+        }
+
+        &:first-child{
+            span{
+                margin-left: 30px;
+            }
+        }
+    }
+}

@@ -101,4 +101,7 @@
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+$(".thumb").hover(function(){
+    $(".img").attr('src', $(this).attr('rel'));
+})
 })
