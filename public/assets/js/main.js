@@ -20,7 +20,7 @@
     })
 
     // owl
-    $('.owl-carousel').owlCarousel({
+    $('.owla').owlCarousel({
       loop:false,
       margin:0,
       nav:true,
@@ -101,7 +101,46 @@
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+//  Hover on pic
 $(".thumb").hover(function(){
     $(".img").attr('src', $(this).attr('rel'));
 })
+
+// popup
+$(".event__more").click(function(){ //popup call-button
+    $(".event__more-pop").show().css("display", "flex");
+    $("body").css("overflow", "hidden");
+})
+$(".fa-times").click(function(){ //popup close-button
+    $("body").css("overflow", "auto");
+    $(".event__more-pop").hide();
+})
+$(".event__more-pop").click(function(){ //popup hide on body
+    $(this).hide();
+    $("body").css("overflow", "auto");
+})
+$(".event__more-text").click(function(event){ //popup not hide on text
+    event.stopPropagation();
+})
+// popup-end
+
+$('.owlc').owlCarousel({
+    loop:true,
+    margin:29,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        }
+    }
+})
+
+$(".staff-detail__thumb").click(function(){ 
+    $(".staff-detail__img").attr("src", $(this).attr("rel"));
+})
+
 })

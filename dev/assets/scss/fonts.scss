@@ -3,16 +3,11 @@
 
 
 $OS: 'Open Sans', sans-serif;
+$GV: 'GoodVibes', sans-serif;
 
-// @font-face {
-// 	font-family: 'Circe';
-// 	src: url('../../assets/fonts/Circe-Regular.eot');
-// 	src: local('Circe'), local('Circe-Regular'),
-// 		url('../../assets/fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
-// 		url('../../assets/fonts/Circe-Regular.woff') format('woff'),
-// 		url('../../assets/fonts/Circe-Regular.ttf') format('truetype');
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
+@font-face {
+	font-family: 'GoodVibes';
+	src: url('../../assets/fonts/goodv.ttf');
+}
 
 
