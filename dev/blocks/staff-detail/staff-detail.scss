@@ -30,6 +30,7 @@
     &__full{
         width: 100%;
         display: flex;
+        padding-bottom: 50px;
         
     }
 
@@ -38,10 +39,32 @@
         padding-top: 100px;
         display: flex;
         justify-content: center;
+        position: relative;
+        &:before{
+            content: "";
+            width: 379px;
+            height: 404px;
+            background-color: #e49c6e;
+            position: absolute;
+            top: 30%;
+            z-index: 8;
+            left: 0;
+        }
+
+        img{
+            width: 450px;
+            height: 450px;
+            position: relative;
+            z-index: 9;
+           
+        }
+
+      
     }
 
     &__text{
         width: 50%;
+        padding-right: 100px;
         p{
             font-size: 16px;
             font-style: italic;
