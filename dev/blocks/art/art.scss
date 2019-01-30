@@ -1,0 +1,176 @@
+.art{
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        img{
+            z-index: 10;
+        }
+
+        &-row{
+            display: flex;
+            padding-top: 40px;
+            justify-content: flex-end;
+            img{
+                margin-right: 40px;
+                height: max-content;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        padding-left: 28px;
+        li{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text{
+        font-size: 20px;
+    }
+    &__row{
+        display: flex;
+        &_left{
+            padding-left: 80px;
+        }
+
+        &_right{
+            padding-right: 80px;
+        }
+        &_1{
+            margin-top: 29px;
+            margin-bottom: 90px;
+            .art__text{
+                width: 40%;
+            }
+            .art__img{
+                padding-top: 44px;
+                width: 60%;
+                align-items: flex-end;
+
+                &:before{
+                    content: "";
+                    width: 438px;
+                    height: 760px;
+                    background-color: #e49c6e;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: 8;
+                }
+
+                &:after{
+                    content: "";
+                    width: 296px;
+                    height: 153px;
+                    background-color: #e49c6e;
+                    position: absolute;
+                    left: 190px;
+                    bottom: 100px;
+                    z-index: 8;
+                }
+
+                .art__mimage{
+                    width: 763px;
+                    height: 545px;
+                }
+            }
+
+        }
+
+
+        &_2{
+            padding-bottom: 100px;
+            
+            .art__text{
+                width: 30%;
+            }
+            .art__img{
+                width: 70%;
+                align-items: flex-start;
+
+                &:before{
+                    content: "";
+                    width: 794px;
+                    height: 455px;
+                    background-color: #e49c6e;
+                    position: absolute;
+                    left: 10%;
+                    top: 7%;
+                    z-index: 8;
+                }
+
+                &-row{
+                    justify-content: flex-start;
+                    position: relative;
+                    z-index: 10;
+                    &:after{
+                        content: "";
+                        width: 763px;
+                        height: 153px;
+                        background-color: #e49c6e;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-left: -380px;
+                        z-index: 8;
+                    }
+                }
+                .art__mimage{
+                    width: 794px;
+                    height: 567px;
+                }
+            }
+
+        }
+    
+
+    &_3{
+        padding-bottom: 100px;
+        
+        .art__text{
+            width: 40%;
+        }
+        .art__img{
+            width: 60%;
+            align-items: flex-end;
+            &-row{
+                justify-content: flex-end;
+                position: relative;
+                z-index: 8;
+                &:after{
+                    content: "";
+                    width: 794px;
+                    height: 255px;
+                    background-color: #e49c6e;
+                    position: absolute;
+                    bottom: 50%;
+                    left: 50%;
+                    margin-left: -380px;
+                    z-index: 1;
+                }
+            }  
+            .art__mimage{
+                width: 794px;
+                height: 567px;
+                z-index: 10;
+                position: relative;
+            }
+        }
+    }
+}
+
+}

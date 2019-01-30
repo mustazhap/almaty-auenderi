@@ -13,6 +13,13 @@ html, body{
   color: $text;
   *{
     box-sizing: border-box;
+    -webkit-user-select: true;
+    -moz-user-select: true;
+    -ms-user-select: true;
+    user-select: true;
+    -webkit-touch-callout: true;
+    -khtml-user-select: true;
+    -ms-touch-action: pan-y;
   }
 }
 
@@ -50,6 +57,8 @@ a{
 @import "../../blocks/structure/structure";
 @import "../../blocks/headship/headship";
 @import "../../blocks/history/history";
+@import "../../blocks/art/art";
+
 
 
 
